@@ -1,0 +1,13 @@
+{
+  "saludos":[
+    {
+      "colombia": "hola"
+    },
+    {
+      "EEUU": "hello"
+    },
+    {
+      "Francia": "Salut"
+    }
+  ]
+}
