@@ -1,8 +1,15 @@
 import React from 'react'
+import SongArtist from './SongArtist'
+import SongLyric from './SongLyric'
 
 const SongDetails = () => {
   return (
-    <div>SongDetails</div>
+    <div>SongDetails
+    --
+    <SongArtist/>
+    <SongLyric/>
+    --
+    </div>
   )
 }
 
