@@ -1,0 +1,29 @@
+html{
+  background-color: #C3C2D890;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .loader {
+    animation: App-logo-spin infinite 2.5s linear;
+  }
+}
+
+.loader {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 65px;
+  color: #1b1b32;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
