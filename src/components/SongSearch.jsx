@@ -14,7 +14,6 @@ const SongSearch = () => {
   const handleSearch = data => {
     console.log(data)
     setSearch(data)
-    console.log(search)
   }
 
   //*pendiente del uso del useEffect para traer la data

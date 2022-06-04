@@ -2,13 +2,13 @@ import React from 'react'
 import SongArtist from './SongArtist'
 import SongLyric from './SongLyric'
 
-const SongDetails = ({search,lyric,bio}) => {
+const SongDetails = ({ search, lyric, bio }) => {
   return (
     <div>SongDetails
-    --
-    <SongArtist/>
-    <SongLyric/>
-    --
+      --
+      <SongArtist />
+      <SongLyric />
+      --
     </div>
   )
 }
