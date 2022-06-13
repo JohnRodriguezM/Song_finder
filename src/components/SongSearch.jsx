@@ -29,6 +29,8 @@ const SongSearch = () => {
       ])
       setBio(artistRes);
       setLyric(songRes);
+      console.log(lyric);
+      console.log(bio)
       setLoading(false)
     }
     getData()
