@@ -1,8 +1,9 @@
 import React from 'react'
 
-const SongLyric = () => {
+const SongLyric = ({song}) => {
+  console.log(song)
   return (
-    <div>SongLyric</div>
+    <div>{song.lyrics}</div>
   )
 }
 

@@ -15,7 +15,7 @@ const SongDetails = ({ search, lyric, bio }) => {
       {lyric.err ? <Message
         msg={`Error ${lyric.status} no existe la canción ${search.song}`}
         bgColor= "#dc3545"
-      /> : <SongLyric />}
+      /> : <SongLyric song = {lyric}/>}
 
 
 
