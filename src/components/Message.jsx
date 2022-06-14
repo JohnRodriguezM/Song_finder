@@ -2,12 +2,20 @@ import React from 'react'
 
 const Message = ({ msg, bgColor }) => {
   const styles = {
-    padding: '1rem',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: '10px auto',
+    width: '80%',
+    height: '30px',
+    maxWidth: '380px',
+    padding: '.4rem',
     marginBottom: '1rem',
     textAlign: 'center',
     color: '#fff',
     fontWeight: 'bold',
     backgroundColor: bgColor,
+    borderRadius: '5px'
   }
 
 

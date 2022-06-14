@@ -20,11 +20,11 @@ const SongForm = ({ handleSearch }) => {
   }
   return (
     <div>
-      Formmmm
+      Search your song and artist
       <form onSubmit={handleSubmit}>
-        <label htmlFor="artist"> - Artist: </label> <br />
+        <label htmlFor="artist">  Artist: </label> <br />
         <input type="text" name="artist" id="" onChange={handleChange} value = {form.artist}/> <br />
-        <label htmlFor="song"> - Song </label> <br />
+        <label htmlFor="song">  Song </label> <br />
         <input type="text" name="song" id="" onChange={handleChange} value = {form.song}/>
         <br />
         <input type="submit" value="enviar" />
