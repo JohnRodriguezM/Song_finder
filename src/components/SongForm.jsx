@@ -5,6 +5,11 @@ const initialForm = {
   song: '',
 }
 const SongForm = ({ handleSearch }) => {
+
+  let stylesInput = {
+    maxWidth: '320px',
+  }
+
   const [form, setForm] = useState(initialForm)
   const handleChange = e => {
     setForm({
@@ -20,17 +25,17 @@ const SongForm = ({ handleSearch }) => {
   }
   return (
     <div>
-      Search your song and artist
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="artist">  Artist: </label> <br />
-        <input type="text" name="artist" id="" onChange={handleChange} value = {form.artist}/> <br />
-        <label htmlFor="song">  Song </label> <br />
-        <input type="text" name="song" id="" onChange={handleChange} value = {form.song}/>
-        <br />
-        <input type="submit" value="enviar" />
-        <input type="reset" value="" style = {{visibility: 'hidden'}}/>
-      </form>
+      <h1>I 🧡 music</h1> <br />
 
+      <form onSubmit={handleSubmit}>
+        <label className="label" htmlFor="artist">  Artist: </label>
+        <input style={stylesInput} className="input is-rounded" type="text" name="artist" id="" onChange={handleChange} value={form.artist} /> <br />
+        <label className="label" htmlFor="song">  Song: </label>
+        <input style={stylesInput} className="input is-rounded" type="text" name="song" id="" onChange={handleChange} value={form.song} />
+        <br /> <br />
+        <input className="button is-info" type="submit" value="Buscar" />
+      </form>
+      <br />
     </div>
   )
 }

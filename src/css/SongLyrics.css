@@ -1,0 +1,13 @@
+
+.container{
+  margin: 20px auto;
+}
+
+.title{
+  margin: 10px auto;
+  text-transform: uppercase;
+}
+.b_cuote{
+  line-height: 21px;
+  white-space: pre-wrap;
+}

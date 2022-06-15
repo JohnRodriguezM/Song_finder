@@ -46,7 +46,6 @@ const SongSearch = () => {
   //*pendiente del uso del useEffect para traer la data
   return (
     <div>
-      song search
       <SongForm handleSearch={handleSearch} />
       {loading ? <SongLoader /> : <SongDetails
         search={search}

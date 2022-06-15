@@ -7,7 +7,7 @@ const Message = ({ msg, bgColor }) => {
     alignItems: 'center',
     margin: '10px auto',
     width: '80%',
-    height: '30px',
+    height: '40px',
     maxWidth: '380px',
     padding: '.4rem',
     marginBottom: '1rem',

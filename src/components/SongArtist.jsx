@@ -1,22 +1,28 @@
 import React from 'react'
 
-export const SongArtist = ({character}) => {
+import '../css/SongArtist.css'
+
+export const SongArtist = ({character,nameArtist}) => {
   return (
     <div>
     {
       character.map(el => {
-        const {idArtist,strArtist,strCountry,strGender,strBiographyES} = el;
+        const {idArtist,strArtist,strCountry,strArtistWideThumb,strBiographyES} = el;
         return (
           <Lista key = {idArtist}>
-          <li>{strArtist}</li>
-          <li>{strCountry}</li>
-          <li>{strGender}</li>
-          <details>
+          {strArtistWideThumb && <li>
+            <img src={strArtistWideThumb} alt="" width = "350"/>
+          </li>}
+          <li>{`El compositor de esta canción es: ${strArtist}`}</li>
+          {strCountry && <li>{`Nació en: ${strCountry}`}</li>}
+          {strBiographyES &&
+            <details>
             <summary>
-              History
+              Esta es la biografia del artista
             </summary>
-            <li>{strBiographyES}</li>
+            <blockquote className ="biography">{strBiographyES}</blockquote>
           </details>
+          }
           </Lista>
         )
       })
@@ -26,12 +32,8 @@ export const SongArtist = ({character}) => {
 }
 
 const Lista = (props) => {
-  let style = {
-    textDecoration: 'none',
-    listStyle: 'none',
-  }
   return(
-    <ul style = { style }>
+    <ul className="ulContainer">
         {props.children}
     </ul>
   )

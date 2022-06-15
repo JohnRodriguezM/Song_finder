@@ -1,9 +1,17 @@
 import React from 'react'
 
-const SongLyric = ({song}) => {
-  console.log(song)
+
+import '../css/SongLyrics.css'
+
+const SongLyric = ({ song, title }) => {
   return (
-    <div>{song.lyrics}</div>
+    <div className="container">
+      <h1
+        className="title">{title}</h1>
+      <blockquote
+        className="b_cuote"
+       >{song.lyrics}</blockquote>
+    </div>
   )
 }
 
